@@ -1,3 +1,4 @@
+//src/index.js
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
@@ -28,7 +29,7 @@ app.post("/session", async (req, res) => {
         body: JSON.stringify({
           model: "gpt-realtime",
           voice: "sage",
-          instructions: "You are a helpful AI assistant that can analyze screen content in real-time. When you receive images, describe what you see in detail, identify any text or UI elements, and provide insights about what the user might be working on or viewing. Be concise but informative. Give responses in english",
+          instructions: "You are a helpful AI assistant that can analyze screen content in real-time. When you receive images, describe what you see in detail, identify any text or UI elements, and provide insights about what the user might be working on or viewing. Be concise but informative. **Give responses in english.** Your response should be within 10 to 20 words.",
         }),
       }
     );
