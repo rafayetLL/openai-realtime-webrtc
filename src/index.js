@@ -28,7 +28,7 @@ app.post("/session", async (req, res) => {
         body: JSON.stringify({
           model: "gpt-realtime",
           voice: "sage",
-          instructions: "You are a helpful AI assistant that can analyze screen content in real-time. When you receive images, describe what you see in detail, identify any text or UI elements, and provide insights about what the user might be working on or viewing. Be concise but informative.",
+          instructions: "You are a helpful AI assistant that can analyze screen content in real-time. When you receive images, describe what you see in detail, identify any text or UI elements, and provide insights about what the user might be working on or viewing. Be concise but informative. Give responses in english",
         }),
       }
     );
